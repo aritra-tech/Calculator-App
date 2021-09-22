@@ -1,13 +1,11 @@
-package com.example.calculator;
+package com.geekym.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Scriptable;

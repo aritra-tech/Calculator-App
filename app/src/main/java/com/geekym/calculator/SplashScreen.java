@@ -1,10 +1,9 @@
-package com.example.calculator;
+package com.geekym.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Window;
 
 public class SplashScreen extends AppCompatActivity {
 

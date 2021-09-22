@@ -1,4 +1,4 @@
-package com.example.calculator;
+package com.geekym.calculator;
 
 import android.content.Context;
 
