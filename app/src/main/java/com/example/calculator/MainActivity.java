@@ -25,9 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         getSupportActionBar().hide();
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         inputTxt = findViewById(R.id.inputTxt);
         outputTxt = findViewById(R.id.outputTxt);
@@ -180,23 +178,35 @@ public class MainActivity extends AppCompatActivity {
                 inputTxt.setText(data + "×");
             }
         });
+
         bt_equal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 data = inputTxt.getText().toString();
+                String d = data;
+                int last = data.length();
 
-                data = data.replaceAll("×","*");
-                data = data.replaceAll("%","/100");
-                data = data.replaceAll("÷","/");
+                data = data.replaceAll("×", "*");
+                data = data.replaceAll("%", "/100");
+                data = data.replaceAll("÷", "/");
+                //for null value
 
-                Context rihno = Context.enter();
-                rihno.setOptimizationLevel(-1);
-
-                String finalRes ="";
-                Scriptable scriptable = rihno.initStandardObjects();
-                finalRes = rihno.evaluateString(scriptable,data,"Javascript",1,null).toString();
-
-                outputTxt.setText(finalRes);
+                if (data.equals("") || data.equals(null)) {
+                        return;
+                    }
+                if (!data.equals("") || !data.equals(null)) {
+                    char[] charArray = d.toCharArray();
+                    char last_data = charArray[last - 1];
+                    if (last_data == '+' || last_data == '-' || last_data == '×' || last_data == '÷') {
+                        return;
+                    }
+                    Context rihno = Context.enter();
+                    rihno.setOptimizationLevel(-1);
+                    String finalRes = "";
+                    Scriptable scriptable = rihno.initStandardObjects();
+                    finalRes = rihno.evaluateString(scriptable, data, "Javascript", 1, null).toString();
+                    outputTxt.setText(finalRes); //final answer
+                }
             }
         });
     }

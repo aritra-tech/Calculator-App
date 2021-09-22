@@ -5,189 +5,188 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
+    android:padding="25dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/inputTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="100dp"
         android:layout_above="@+id/outputTxt"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="69dp"
         android:gravity="right"
         android:paddingRight="20dp"
-        android:id="@+id/inputTxt"/>
+        android:textColor="@color/white"
+        android:textSize="100dp" />
+
     <TextView
+        android:id="@+id/outputTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FF9800"
-        android:textSize="90dp"
         android:layout_above="@+id/but_images"
         android:gravity="right"
         android:paddingRight="20dp"
-        android:id="@+id/outputTxt"/>
+        android:textColor="#FF9800"
+        android:textSize="90dp" />
 
 
     <LinearLayout
         android:id="@+id/but_images"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
         android:background="#00FFFFFF"
-        android:layout_alignParentBottom="true">
+        android:orientation="vertical">
+
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
+            android:gravity="center"
             android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/open_brack"
-                android:layout_width="160dp"
-                android:layout_height="70dp"
-                android:layout_marginRight="90dp"
-                android:background="@drawable/but_openbracket" />
-
-            <ImageView
-                android:id="@+id/close_brack"
-                android:layout_width="160dp"
-                android:layout_height="70dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/but_closebracket" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
             android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:paddingBottom="5dp">
 
             <ImageView
                 android:id="@+id/but_7"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginRight="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/but_7" />
+
             <ImageView
                 android:id="@+id/but_8"
-                android:layout_width="70dp"
-                android:background="@drawable/but_8"
-                android:layout_marginRight="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginLeft="5dp"
-                android:layout_height="70dp"/>
+                android:layout_marginRight="10dp"
+                android:background="@drawable/but_8" />
+
             <ImageView
                 android:id="@+id/but_9"
-                android:layout_width="70dp"
-                android:background="@drawable/but_9"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_height="70dp"/>
+                android:background="@drawable/but_9" />
 
             <ImageView
                 android:id="@+id/but_minus"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginRight="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginLeft="5dp"
-                android:background="@drawable/but_minus"/>
+                android:layout_marginRight="10dp"
+                android:background="@drawable/but_minus" />
+
             <ImageView
                 android:id="@+id/but_div"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginRight="18dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginLeft="0dp"
-                android:background="@drawable/but_div"/>
+                android:layout_marginRight="18dp"
+                android:background="@drawable/but_div" />
         </LinearLayout>
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
+            android:gravity="center"
             android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
 
             <ImageView
                 android:id="@+id/but_4"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/but_4" />
+
             <ImageView
                 android:id="@+id/but_5"
-                android:layout_width="70dp"
-                android:background="@drawable/but_5"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginRight="10dp"
-                android:layout_height="70dp"/>
+                android:background="@drawable/but_5" />
+
             <ImageView
                 android:id="@+id/but_6"
-                android:layout_width="70dp"
-                android:background="@drawable/but_6"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginRight="10dp"
-                android:layout_height="70dp"/>
+                android:background="@drawable/but_6" />
+
             <ImageView
                 android:id="@+id/all_clear"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="0dp"
-                android:background="@drawable/all_clear"/>
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/all_clear" />
 
             <ImageView
                 android:id="@+id/but_multiply"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="18dp"
                 android:background="@drawable/but_multiply" />
         </LinearLayout>
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
+            android:gravity="center"
             android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
 
             <ImageView
                 android:id="@+id/but_1"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/but_1" />
+
             <ImageView
                 android:id="@+id/but_2"
-                android:layout_width="70dp"
-                android:background="@drawable/but_2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginRight="10dp"
-                android:layout_height="70dp"/>
+                android:background="@drawable/but_2" />
+
             <ImageView
                 android:id="@+id/but_3"
-                android:layout_width="70dp"
-                android:background="@drawable/but_3"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginRight="10dp"
-                android:layout_height="70dp"/>
+                android:background="@drawable/but_3" />
 
             <ImageView
                 android:id="@+id/but_plus"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/button_plus" />
 
             <ImageView
                 android:id="@+id/but_mod"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="18dp"
                 android:background="@drawable/but_mod" />
         </LinearLayout>
 
@@ -196,35 +195,36 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
+            android:gravity="center"
             android:orientation="horizontal"
             android:paddingTop="5dp"
             android:paddingBottom="5dp">
 
             <ImageView
                 android:id="@+id/but_0"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/but_0" />
 
             <ImageView
                 android:id="@+id/but_dot"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/but_dot" />
 
             <ImageView
                 android:id="@+id/but_cancel"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/but_cancel" />
 
             <ImageView
                 android:id="@+id/but_equal"
-                android:layout_width="165dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/but_equal" />
         </LinearLayout>
