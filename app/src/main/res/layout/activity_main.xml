@@ -74,18 +74,21 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
                 android:background="@drawable/but_7" />
             <ImageView
                 android:id="@+id/but_8"
                 android:layout_width="70dp"
                 android:background="@drawable/but_8"
                 android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_height="70dp"/>
             <ImageView
                 android:id="@+id/but_9"
                 android:layout_width="70dp"
                 android:background="@drawable/but_9"
                 android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
                 android:layout_height="70dp"/>
 
             <ImageView
@@ -93,12 +96,14 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
                 android:background="@drawable/but_minus"/>
             <ImageView
                 android:id="@+id/but_div"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginLeft="0dp"
                 android:background="@drawable/but_div"/>
         </LinearLayout>
 
@@ -196,7 +201,7 @@
             android:paddingBottom="5dp">
 
             <ImageView
-                android:id="@+id/but_zero"
+                android:id="@+id/but_0"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="10dp"
